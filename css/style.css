@@ -1,0 +1,41 @@
+#land{
+    height: 100vh;
+    background-image: url(/images/class.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 25vh;
+}
+#land button{
+    margin-top: 10vh;
+}
+#mystyle{
+    background-color: transparent;
+}
+#bt{
+    font-size: 12px;
+}
+  #trained{
+      height: 100vh;
+      padding-top:10vh; 
+  }
+.under{
+    /* display: inline-block; */
+    position: relative;
+    color: #38ce59;
+}
+.under::after{
+    content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #38ce59;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.under:hover::after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
